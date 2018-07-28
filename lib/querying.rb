@@ -5,8 +5,9 @@ end
 def select_name_and_motto_of_char_with_longest_motto
   "select characters.name, characters.motto
   from characters
-  where count(characters.motto) >"
-  
+  order by length(characters.motto)
+  limit 1"
+
 end
 
 
