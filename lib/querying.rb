@@ -32,7 +32,7 @@ def select_series_title_with_most_human_characters
   from series
   inner join characters
   on series.id = characters.series_id
-  where characters.species = "human""
+  where characters.species = 'human'"
 end
 
 def select_character_names_and_number_of_books_they_are_in
