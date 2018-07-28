@@ -11,7 +11,7 @@ def select_name_and_motto_of_char_with_longest_motto
 end
 
 def select_value_and_count_of_most_prolific_species
-  "select characters.species, count(characters.species)
+  "select characters.species, characters.species
   from characters
   order by count(characters.species) desc
   limit 1"
